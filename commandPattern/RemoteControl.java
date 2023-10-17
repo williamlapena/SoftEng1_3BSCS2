@@ -1,9 +1,7 @@
 package commandPattern;
 
 public class RemoteControl {
-
     private Command command;
-
     public Command getCommand() {
         return command;
     }
@@ -15,4 +13,7 @@ public class RemoteControl {
     public void clickButton(){
         command.execute();
     }
+
+
+
 }
