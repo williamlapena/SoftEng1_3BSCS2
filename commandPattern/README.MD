@@ -14,3 +14,18 @@ Your challenge is to apply a design pattern that allows this remote control to b
 
 ## UML Diagram
 ![alt text](https://github.com/JerryEsperanza/SoftEng1_4BSCS2/blob/master/commandPattern/commandPatternImage.png?raw=true)
+
+## Components
+
+ViewerApp (Client): This represents an application used by viewers to control the TV. It interacts with the RemoteControl to send commands.
+
+RemoteControl (Invoker): The RemoteControl acts as an invoker, receiving commands from the ViewerApp and executing them. It has a clickButton() method to invoke commands.
+
+Command (Interface): An interface defining the execute() method, which concrete command objects must implement. It ensures that all concrete commands have an execute() method.
+
+PowerOn (Concrete Command): A concrete command object representing the "power on" operation for the TV. It encapsulates the switchOn() method of the Tv object.
+
+PowerOff (Concrete Command): A concrete command object representing the "power off" operation for the TV. It encapsulates the switchOff() method of the Tv object.
+
+Tv (Receiver): The TV object represents the device being controlled. It has switchOn() and switchOff() methods to control its power state.
+
