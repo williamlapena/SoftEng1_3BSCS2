@@ -2,7 +2,7 @@ package adapterPattern;
 
 public class AirCon {
     public String turnOn(){
-        return "Aircon is grumbling.  Initializing cooling stage!";
+        return "Aircon is grumble.  Initializing cooling stage!";
     }
 
     public String turnOff(){
